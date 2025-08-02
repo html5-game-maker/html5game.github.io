@@ -1,44 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Typing Game</title>
+  <meta name="juicyads-site-verification" content="2cad3255f7b426e7452ae336679b6a47">
+  <meta name="juicyads-site-verification" content="2cad3255f7b426e7452ae336679b6a47"/>
+  <meta name="google-site-verification" content="LnyyXG9Xtcf0zkWg96C0SIMRXniSiWXDlL3LJFaSckI" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hubspot Indian</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      background: #cc0000;
+      color: #fff;
+    }
+
+    header input {
+      padding: 0.5rem;
+      width: 40%;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video-grid {
+      width: 100%;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .video-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .video-card:hover {
+      transform: scale(1.02);
+    }
+
+    .video-thumb {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .video-info {
+      padding: 0.5rem;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      position: relative;
+      background: #fff;
+      padding: 1rem;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .modal-content iframe {
+      width: 100%;
+      height: 450px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      gap: 1rem;
+    }
+
+    .pagination button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #cc0000;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .pagination button:disabled {
+      background: #999;
+      cursor: not-allowed;
+    }
+  </style>
 </head>
 <body>
- 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="logo">▶ Hubspot Indian</div>
+    <input type="text" placeholder="Search..." id="searchBox" />
+  </header>
 
-  <div class="container">
-    <h1>Typing Game</h1>
-    <p id="word"></p>
-    <input type="text" id="input-box" placeholder="Type here...">
-    <p id="score">Score: 0</p>
-    <p id="time">Time left: 10</p>
+  <div class="main">
+    <section class="video-grid" id="videoGrid">
+      <!-- Videos inserted here -->
+    </section>
+
+    <div class="pagination">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
   </div>
 
-
-</div>
-
-
-  <!-- SEO Footer -->
-  <footer class="footer">
-    <div class="footer-links">
-      <a href="/privacy.html">Privacy Policy</a> |
-      <a href="/terms.html">Terms of Service</a> |
-      <a href="/sitemap.xml">Sitemap</a>
+  <!-- Modal -->
+  <div class="modal" id="videoModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <iframe id="videoPlayer" frameborder="0" allowfullscreen></iframe>
     </div>
-    <p>&copy; 2025 Typing Game. All rights reserved.</p>
-  </footer>
+  </div>
 
-  <script src="script.js"></script>
+  <script>
+    const videos = [
+      { title: "step sister Asian hardcore full sex video", thumb: "/files/1.png", url: "https://xhamster43.desi/videos/a-video-in-which-a-man-is-under-the-guise-of-a-high-fever-inevitably-leading-to-sex-xhd8Ihk" },
+      { title: "step father fuck asian daughter", thumb: "/files/2.png", url: "https://xhamster43.desi/videos/letting-my-bullys-step-father-fuck-me-so-i-dont-have-problems-at-school-exxxtrasmall-xhnGsT6" },
+      { title: "amateur mom fuck me step son", thumb: "/files/3.png", url: "https://xhamster43.desi/videos/hey-stepson-can-i-help-you-with-my-vagina-since-your-stepfather-is-not-here-what-do-you-say-xh1uQI6" },
+      { title: "step sun fuck their amateur mom in kitchen", thumb: "/files/4.png", url: "https://xhamster43.desi/videos/fucked-my-hot-stepmom-alexa-payne-on-the-kitchen-counter-xhdIdyL" },
+      { title: "Asian girl fuck her step brother", thumb: "/files/5.png", url: "https://xhamster43.desi/videos/obedient-kitty-may-thai-takes-old-big-cock-in-her-tight-asian-pussy-xhNAEsv" },
+      { title: "Amateur girl sex with her father", thumb: "/files/6.png", url: "https://xhamster43.desi/videos/model-tv-super-horny-hostel-special-room-service-xh2y59G" },
+      { title: "asian family full sex video", thumb: "/files/7.png", url: "https://xhamster43.desi/videos/model-media-asia-picking-up-stranger-on-the-street-xhtBftu" },
+      { title: "amateur mom sex with their step son in badroom", thumb: "/files/8.png", url: "https://xhamster43.desi/videos/by-gently-kissing-her-asian-lips-he-gets-the-brunette-horny-for-his-big-cock-xhgCkqT" },
+      { title: "asian lesbian sex video", thumb: "/files/9.png", url: "https://xhamster43.desi/videos/beautiful-babes-have-passionate-lesbian-sex-vol-2-3-xhTCum8" },
+      { title: "amateur step mother sex with her step asian sister", thumb: "/files/10.png", url: "https://xhamster43.desi/videos/mommys-boy-milf-dana-vespoli-soothes-scared-stepdaughter-demi-hawks-stepson-with-ffm-threesome-xhfpbQP" }
+    ];
+
+    const videosPerPage = 4;
+    let currentPage = 1;
+    let filteredVideos = [...videos];
+
+    const videoGrid = document.getElementById("videoGrid");
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("videoPlayer");
+    const searchBox = document.getElementById("searchBox");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function openModal(url) {
+      player.src = url;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      player.src = "";
+      modal.style.display = "none";
+    }
+
+    function renderVideos() {
+      videoGrid.innerHTML = "";
+      const start = (currentPage - 1) * videosPerPage;
+      const paginatedVideos = filteredVideos.slice(start, start + videosPerPage);
+
+      if (paginatedVideos.length === 0) {
+        videoGrid.innerHTML = "<p>No videos found.</p>";
+        return;
+      }
+
+      paginatedVideos.forEach(video => {
+        const card = document.createElement("div");
+        card.className = "video-card";
+        card.innerHTML = `
+          <img src="${video.thumb}" class="video-thumb" />
+          <div class="video-info">
+            <h4>${video.title}</h4>
+          </div>
+        `;
+        card.onclick = () => openModal(video.url);
+        videoGrid.appendChild(card);
+      });
+
+      updateButtons();
+    }
+
+    function updateButtons() {
+      const totalPages = Math.ceil(filteredVideos.length / videosPerPage);
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+    }
+
+    prevBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderVideos();
+      }
+    };
+
+    nextBtn.onclick = () => {
+      const totalPages = Math.ceil(filteredVideos.length / videosPerPage);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderVideos();
+      }
+    };
+
+    searchBox.addEventListener("input", () => {
+      const keyword = searchBox.value.trim().toLowerCase();
+      filteredVideos = videos.filter(video =>
+        video.title.toLowerCase().includes(keyword)
+      );
+      currentPage = 1; // Reset to first page on search
+      renderVideos();
+    });
+
+    // Initial load
+    renderVideos();
+  </script>
 </body>
 </html>
+
